@@ -292,7 +292,7 @@ a.indexa {
 		}
 
 		.logo2:before {
-			transform: scale(1.2,0.1) translateY(-100px);
+			transform: scale(0.8,0.1) translateY(-100px);
 		}
 }
 
