@@ -251,7 +251,6 @@ a.indexa {
 		z-index: 21;
 
 		padding-top: 20px;
-		font-size: 0;
 
 
 
@@ -378,7 +377,7 @@ a.indexa {
 
 			width: 50%;
 			height: 100%;
-			background-color: rgba(0,0,0,.6);
+			background-color: rgba(255,255,255,.8);
 
 			z-index: 22;
 			font-size: 0;
@@ -415,20 +414,25 @@ a.indexa {
 			width: 50%;
 			min-width: 100px;
 			height: 20%;
-			margin: 2%;
-			top: 125px;
+			margin: 5% 2%;
+			top: 150px;
 			
 			/*background-color: rgba(255,255,255,.5);*/
 			background-color: transparent;
 			/*border-radius: 10%;*/
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid #666;
+
+			max-height: 120px;
+
 		}
 
 		.icon a{ /*icon感應區域*/
 		z-index: 26;
+		padding-top: 25%;
+
 		}
 
-		.icon img{
+		/*.icon .ico{
 			background: #ccc;
 			border: 5px solid #ccc;
 			border-radius: 50%;
@@ -436,10 +440,10 @@ a.indexa {
 			width: 40px; 
 			height: 40px;
 		}
-
+*/
 		.icon p{
 			font-size: 14px;
-			color: #ccc;
+			color: #666;
 			bottom: 5px;
 		}
 
@@ -517,7 +521,7 @@ a.indexa {
 		#sandwich:checked ~ .sand:before {
 			top: 125px;
 			transform: rotate(-180deg);
-			border-color: #ccc transparent ;
+			
 		}
 
 		#sandwich:checked ~ div.logo_top .bannerleft{
@@ -526,6 +530,11 @@ a.indexa {
 
 		#sandwich:checked ~ div.logo_top .bannerright{
 		top: 0;
+		}
+
+		#sandwich:checked ~ div.logo_top{
+			background-color: #000;
+			transition: 2s;
 		}
 
 		#sandwich:checked ~ div.logo img{
