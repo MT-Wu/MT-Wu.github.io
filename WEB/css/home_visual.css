@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+	/*background-color: rgba(12,76,138,1);   ---blue*/
+	/*background-color: rgba(85,135,162,1);  ---skyblue*/
+
+body{
+	background-color: rgba(85,135,162,1);
+}
+
+header, content, footer{
+	position: relative;
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	display: block;
+	width: 80%;
+	min-width: ;
+	background-color: #fff;
+}
+
+header{
+	height: 175px;
+}
+
+content{
+	/*background-color: #eee;*/
+	height: 1000px;
+}
+
+footer{
+	/*background: #ddd;*/
+	height: 100px;
+}
+
+
+
+/*---中央logo區域---*/
+
+/*logo底圖*/
+.logo{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	z-index: 20;
+
+	width: 300px;
+	height: 125px;  
+	background-color: rgba(12,76,138,1);
+
+	border-style: solid;
+	border-width:0 10px 5px; 
+	border-color:rgba(85,135,162,1);
+
+	transition: .1s;
+}
+
+/*logo下面的三角*/
+.logo:after, .logo:before{
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 125px;
+
+	border-style: solid;
+	border-color: rgba(12,76,138,1) transparent ;
+	border-width: 40px 150px 0;
+
+	transition: .5s;
+}
+/*三角的邊框*/
+.logo:before{
+	top: 130px;
+	left: -10px;
+	border-color: rgba(85,135,162,1) transparent ;
+	border-width: 43px 160px 0;
+}
+
+/*logo字樣圖（白色）*/
+.logo img{
+	display: inline-block;
+	position: absolute;
+	width: 300px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+
+	transition: .1s;
+}
+
+/*---logo轉變後動畫---*/
+.logo2 {
+	background-color: rgba(12,76,138,0);
+	border-color:rgba(85,135,162,0);
+
+	position: fixed;
+	top: -43px;
+
+	transition: .1s;
+
+}
+
+/*logo下面的三角*/
+.logo2:after {
+	transform: scale(0.5);
+	border-color: rgba(12,76,138,1) transparent;
+	border-width: 40px 150px 0;
+	transform-origin: bottom;
+	transition: 1s;
+}
+/*三角的邊框*/
+.logo2:before {
+	transform: scaleX(3) translateY(10px);
+	border-color: #555 transparent;
+	border-width: 2px 150px 0;
+	transition: 1s;
+}
+
+/*logo字樣圖（白色）*/
+.logo2 img {
+	opacity: 0;
+	transition: 1s;
+}
+
+
+
+/*---logo置頂後的樣式---*/
+.logo_top{
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+	z-index: 19;
+
+	width: 80%;
+	height: 100px;  
+	background-color: rgba(255,255,255,.8);
+}
+
+.logo_top img{
+	display: inline-block;
+	position: absolute;
+	width: 300px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 19;
+}
+
+/*---置頂banner---*/
+.bannerleft, .bannerright{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+
+	width: 36%;
+	height: 100px;
+	/*background-color: #faa;*/
+
+	z-index: 18;
+}
+.bannerleft{
+	left: 0;
+}
+.bannerright{
+	right: 0;
+}
+
+/*左右icon排列*/
+
+.banner{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	/*background-color: #ffa;*/
+	text-align: center;
+}
+
+.icon{
+	position: relative;
+	display: inline-block;
+	width: 23%;
+	height: 90px;
+	margin: auto 2%;
+	top: 0;
+	border-bottom: 2px solid #ccc;
+	
+}
+
+.icon img{
+	position: absolute;
+	width: 100%; 
+	height: 40px;
+	top: 0;
+}
+
+.icon p{
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #666;
+
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 2px;
+
+}
+
+
+
+
+
+

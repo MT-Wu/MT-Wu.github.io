@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*中線展開*/
+.miao {
+  
+  animation-name: line;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  float: left;
+  position: absolute; 
+  margin:auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes line{
+      0% {
+        width: 5px;
+        height: 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+      50%, 100%{ 
+      width: 80%;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+  }
+}
+
+/*右下角山的動畫*/
+
+.LOGO .enter{
+  animation-name: mount;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: url(images/mount.svg) no-repeat 100% 100%;
+}
+
+@keyframes mount{
+  0%, 50%{
+    width: 0;
+  }
+      100%  {
+    width: 100%; 
+  }
+}
+
+
+
+
