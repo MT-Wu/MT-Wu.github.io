@@ -241,13 +241,25 @@ a.indexa {
 	height: 90px;
 	
 	margin: auto 2%;
+
 }
 
 .icon a{ /*icon感應區域*/
-		display: block;
+		display: inline-block;
 		width: 100%;
 		height: 100%;
 		z-index: 21;
+
+		padding-top: 20px;
+		font-size: 0;
+
+
+
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+
+
 		}
 
 .icon img{
@@ -268,6 +280,8 @@ a.indexa {
 	right: 0;
 	bottom: 2px;
 }
+
+/*滑鼠移過動畫*/
 
 
 /*---調整平板版和手機版的banner---*/
