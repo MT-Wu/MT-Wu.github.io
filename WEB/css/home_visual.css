@@ -47,7 +47,7 @@ header{
 }
 
 content{
-	background-color: #eee;
+	/*background-color: #eee;*/
 	height: 1000px;
 }
 
@@ -269,7 +269,52 @@ a.indexa {
 	bottom: 2px;
 }
 
-/*滑鼠移過動畫*/
+
+/*---滑鼠移過動畫---*/
+
+.icon:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+	width: 110px;
+	height: 0;
+
+	/*background-color: rgba(85,135,162,.5);*/
+	background-color: rgba(246,210,87,.5);
+	
+
+	z-index: -1;
+	transition: 1s;
+}
+
+.icon:hover:before{
+	height: 110px;
+}
+
+.icon:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+
+	left:-5px;
+	bottom: -20px;
+
+	border-style: solid;
+	border-width: 0px 55px 20px;
+	/*border-color: rgba(255,255,255,.2) transparent;*/
+	border-color: rgba(230,230,230,.1) transparent;
+
+	transform: scale(0.5);
+	transform-origin: top;
+	transition: 1s;
+}
+
+.icon:hover:after{
+	transform: scale(1);
+	border-color: rgba(255,255,255,1) transparent;
+}
+
 
 
 
@@ -293,11 +338,40 @@ a.indexa {
 
 		.icon p{
 			font-size: 0px;
+			transition: .5s;
+		}
+
+		.icon:hover p{
+			font-size: 12px;
 		}
 
 		.logo2:before {
 			transform: scale(0.8,0.1) translateY(-100px);
 		}
+
+
+		/*---滑鼠移過動畫---*/
+
+		.icon:before{
+			left: 0;
+			width: 100%;
+		}
+
+		.icon:after{
+			left: 0;
+			bottom: -20px;
+			border-width: 0 0 10px 40%;
+			border-color: rgba(230,230,230,.5) transparent;
+		}
+
+		.icon:hover:after{
+
+			border-color: rgba(230,230,230,.5) transparent;
+		}
+
+
+		
+
 }
 
 
@@ -527,6 +601,50 @@ a.indexa {
 			transform: scale(0.25,0.5);
 			border-color: rgba(12,76,138,.3) transparent;
 		}
+
+
+/*---滑鼠移過動畫---*/
+		.icon:hover p{
+			font-size: 14px;
+			color: #faa;
+		}
+
+		.icon:before{
+			left: -5px;
+			width: 110px;
+			height: 0;
+
+			background-color: rgba(246,210,87,.5);
+			border-radius: 50%;
+		}
+
+		.icon:hover:before{
+			height: 110px;
+		}
+
+		.icon:after{
+			content: "";
+			width: 100px;
+			height: 100px;
+
+			left:-5px;
+			bottom: -20px;
+
+			border-style: solid;
+			border-width: 0px 55px 20px;
+			/*border-color: rgba(255,255,255,.2) transparent;*/
+			border-color: rgba(230,230,230,.1) transparent;
+
+			transform: scale(0.5);
+			transform-origin: top;
+			transition: 1s;
+		}
+
+		.icon:hover:after{
+			transform: scale(1);
+			border-color: rgba(255,255,255,1) transparent;
+		}
+
 
 } /*手機版本結束*/
 
