@@ -47,7 +47,7 @@ header{
 }
 
 content{
-	/*background-color: #eee;*/
+	background-color: #eee;
 	height: 1000px;
 }
 
@@ -61,6 +61,8 @@ footer{
 #sandwich, .sand{
 	display: none;
 }
+
+.sand:
 
 
 /*---中央logo區域---*/
@@ -341,8 +343,13 @@ a.indexa {
 		/*---logo置頂後的樣式---*/
 		.logo_top{
 			width: 100%;
-			background-color: rgba(255,255,255,0);
+			background-color: rgba(85,135,162,1);/*先上skyblue底色*/
 		}
+		/*logo置頂後的半透明banner*/
+		.logo2 ~ .logo_top{/*logo2出現才上白色*/
+			background-color: rgba(255,255,255,.5);
+		}
+
 
 
 		/*---置頂左右的banner，先對位置---*/
@@ -416,9 +423,8 @@ a.indexa {
 			color: #ccc;
 			bottom: 5px;
 		}
-}
 
-/*---設定選單lebel---*/
+		/*---設定選單lebel---*/
 
 /*把check的方框藏起來*/
 	#sandwich{
@@ -508,6 +514,8 @@ a.indexa {
 			transform: scale(0.25,0.5);
 			border-color: rgba(12,76,138,.3) transparent;
 		}
+
+} /*手機版本結束*/
 
 
 
