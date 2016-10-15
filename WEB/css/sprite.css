@@ -1,9 +1,17 @@
-.ico {
+
+.icon_dark {
   background: url(../images/sprite.svg) no-repeat 50% 0 ; 
   background-size: cover; 
   display: inline-block;
-
 }
+
+.icon_light {
+  background: url(../images/sprite_white.svg) no-repeat 50% 0 ; 
+  background-size: cover; 
+  display: inline-block;
+}
+
+
 .icon-studies {
   width: 40px;
   height: 40px;

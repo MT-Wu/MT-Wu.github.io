@@ -241,7 +241,6 @@ a.indexa {
 	height: 90px;
 	
 	margin: auto 2%;
-
 }
 
 .icon a{ /*icon感應區域*/
@@ -252,20 +251,10 @@ a.indexa {
 
 		padding-top: 20px;
 
-
-
 		  -webkit-box-sizing: border-box;
 		  -moz-box-sizing: border-box;
 		  box-sizing: border-box;
-
-
 		}
-
-.icon img{
-	position: absolute;
-	width: 100%; 
-	height: 40px;
-}
 
 .icon p{
 	font-size: 14px;
@@ -283,7 +272,13 @@ a.indexa {
 /*滑鼠移過動畫*/
 
 
+
+
+
+
+
 /*---調整平板版和手機版的banner---*/
+
 
 /*==========平板版本==========*/
 
@@ -294,10 +289,6 @@ a.indexa {
 		.icon{ 
 			width: 27%;
 			margin: auto 1%;
-		}
-
-		.icon img{
-			height: 40px;
 		}
 
 		.icon p{
@@ -359,13 +350,14 @@ a.indexa {
 			background-color: rgba(85,135,162,1);/*先上skyblue底色*/
 		}
 
+		/*修正手機下拉會看到藏在下面的黑色logo*/
 		.logo_top img{
 			opacity: 0;
 		}
-
 		.logo2 ~ .logo_top img{
 			opacity: 1;
 		}
+
 
 		/*logo置頂後的半透明banner*/
 		.logo2 ~ .logo_top{/*logo2出現才上白色*/
@@ -411,47 +403,33 @@ a.indexa {
 			margin-left: 0;
 		}
 
+
+		/*下拉選單icon的長相*/
 		.icon{ 
-			position: relative;
-			display: inline-block;
-			
 			width: 50%;
 			min-width: 100px;
 			height: 20%;
+			max-height: 120px;
 			margin: 5% 2%;
 			top: 150px;
 			
-			/*background-color: rgba(255,255,255,.5);*/
 			background-color: transparent;
-			/*border-radius: 10%;*/
 			border-bottom: 1px solid #666;
-
-			max-height: 120px;
-
 		}
 
 		.icon a{ /*icon感應區域*/
 		z-index: 26;
 		padding-top: 25%;
-
 		}
 
-		/*.icon .ico{
-			background: #ccc;
-			border: 5px solid #ccc;
-			border-radius: 50%;
-			
-			width: 40px; 
-			height: 40px;
-		}
-*/
 		.icon p{
 			font-size: 14px;
 			color: #666;
 			bottom: 5px;
 		}
 
-		/*---設定選單lebel---*/
+
+/*---設定選單lebel---*/
 
 /*把check的方框藏起來*/
 	#sandwich{
