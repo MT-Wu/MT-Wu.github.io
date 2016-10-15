@@ -62,9 +62,6 @@ footer{
 	display: none;
 }
 
-.sand:
-
-
 /*---中央logo區域---*/
 
 a.indexa {
@@ -157,9 +154,8 @@ a.indexa {
 }
 /*三角的邊框*/
 .logo2:before {
-	transform: scaleX(1.5) translateY(10px);
+	transform: scale(0.8,0.1) translateY(-100px);
 	border-color: #555 transparent;
-	border-width: 2px 150px 0;
 	transition: 1s;
 }
 
@@ -294,6 +290,10 @@ a.indexa {
 		.icon p{
 			font-size: 0px;
 		}
+
+		.logo2:before {
+			transform: scale(1.2,0.1) translateY(-100px);
+		}
 }
 
 
@@ -336,7 +336,7 @@ a.indexa {
 
 		/*三角的邊框*/
 		.logo2:before {
-			transform: scaleX(1.2) translateY(10px);
+			transform: scale(1.2,0.1) translateY(-100px);
 		}
 
 
@@ -347,7 +347,7 @@ a.indexa {
 		}
 		/*logo置頂後的半透明banner*/
 		.logo2 ~ .logo_top{/*logo2出現才上白色*/
-			background-color: rgba(255,255,255,.5);
+			background-color: rgba(255,255,255,.8);
 		}
 
 
