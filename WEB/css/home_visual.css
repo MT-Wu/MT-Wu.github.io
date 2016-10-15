@@ -65,14 +65,13 @@ footer{
 /*---中央logo區域---*/
 
 a.indexa {
-	display: block;
+	display: inline-block;
 
 	position: absolute;
 	margin: auto;
 	left: 0;
 	right: 0;
-	top: 0;
-	bottom: 0;
+	top: 50%;
 
 	width: 300px;
 	height: 60px;
@@ -127,7 +126,8 @@ a.indexa {
 	margin: auto;
 	left: 0;
 	right: 0;
-	top: 50%;
+	top: 0;
+	bottom: 0;
 
 	transition: .1s;
 }
@@ -345,6 +345,11 @@ a.indexa {
 			width: 100%;
 			background-color: rgba(85,135,162,1);/*先上skyblue底色*/
 		}
+
+		.logo2 ~ img{/*logo2出現才上白色*/
+			background-color: rgba(255,255,255,.8);
+		}
+
 		/*logo置頂後的半透明banner*/
 		.logo2 ~ .logo_top{/*logo2出現才上白色*/
 			background-color: rgba(255,255,255,.8);
