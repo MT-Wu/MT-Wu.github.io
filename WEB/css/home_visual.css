@@ -47,7 +47,7 @@ header{
 }
 
 content{
-	background-color: #eee;
+	/*background-color: #eee;*/
 	height: 1000px;
 }
 
@@ -272,6 +272,7 @@ a.indexa {
 
 /*---滑鼠移過動畫---*/
 
+/*旗幟底色*/
 .icon:before, .icon_here:before{
 	content: "";
 	display: inline-block;
@@ -280,10 +281,8 @@ a.indexa {
 	width: 110px;
 	height: 0;
 
-	/*background-color: rgba(85,135,162,.5);*/
 	background-color: rgba(246,210,87,.5);
 	
-
 	z-index: -1;
 	transition: 1s;
 }
@@ -292,6 +291,7 @@ a.indexa {
 	height: 120px;
 }
 
+/*旗幟下面的三角形（白色）*/
 .icon:after, .icon_here:after{
 	content: "";
 	display: inline-block;
@@ -302,7 +302,6 @@ a.indexa {
 
 	border-style: solid;
 	border-width: 0px 55px 20px;
-	/*border-color: rgba(255,255,255,.2) transparent;*/
 	border-color: rgba(230,230,230,.1) transparent;
 
 	transform: scale(0.5);
@@ -316,13 +315,14 @@ a.indexa {
 	border-color: rgba(255,255,255,1) transparent;
 }
 
-.icon_here:after{ /*當頁的底標tag換色*/
+/*當頁的底標tag換色*/
+.icon_here:after{ 
 	border-color: rgba(209,68,118,1) transparent;
 }
 
 
 
-
+/*____________________________________________________________________________*/
 
 /*---調整平板版和手機版的banner---*/
 
@@ -344,7 +344,8 @@ a.indexa {
 		}
 
 		.icon:hover p{
-			font-size: 12px;
+			font-size: 2px;
+			transform: scale(1.2);
 		}
 
 		.logo2:before {
@@ -354,30 +355,40 @@ a.indexa {
 
 		/*---滑鼠移過動畫---*/
 
-		.icon:before{
-			left: 0;
+		.icon:before, .icon_here:before{
+			left: 0px;
 			width: 100%;
 		}
 
-		.icon:after{
-			left: 0;
-			bottom: -20px;
-			border-width: 0 0 10px 40%;
-			border-color: rgba(230,230,230,.5) transparent;
+		.icon:hover:before, .icon_here:hover:before{
+			height: 100px;
 		}
 
-		.icon:hover:after{
+		.icon:after, .icon_here:after{
+			left:0px;
+			bottom: 0px;
+			width: 100%;
+			height: 8px;
 
-			border-color: rgba(230,230,230,.5) transparent;
+			background-color: rgba(230,230,230,.1);
+			border-width: 0px;
+
+			transform: scale(0.5);
+		}
+			
+		.icon:hover:after, .icon_here:hover:after{
+			transform: scale(1) translateY(10px);
+			background-color: rgba(204,204,204,.5);
 		}
 
-
-		
+		.icon_here:after{ /*當頁的底標tag換色*/
+			background-color: rgba(209,68,118,1) ;
+		}
 
 }
 
 
-
+/*____________________________________________________________________________*/
 
 /*==========手機版本==========*/
 
@@ -409,9 +420,9 @@ a.indexa {
 
 		/*logo下面的三角*/
 		.logo2:after {
-			transform: scale(0.5);
-			border-color: rgba(12,76,138,1) transparent;
-			transform-origin: bottom;
+			transform: scale(0.5) translateY(-150px);
+			border-color: rgba(12,76,138,.8) transparent;
+			transform-origin: top;
 		}
 
 		/*三角的邊框*/
@@ -600,7 +611,7 @@ a.indexa {
 		}
 
 		#sandwich:checked ~ .logo2:after {/*logo下面的三角*/
-			transform: scale(0.25,0.5);
+			transform: scale(0.25,0.5) translateY(40px);
 			border-color: rgba(12,76,138,.3) transparent;
 		}
 
@@ -608,43 +619,26 @@ a.indexa {
 /*---滑鼠移過動畫---*/
 		.icon:hover p{
 			font-size: 14px;
+			transform: scale(1);
 			color: #faa;
 		}
 
 		.icon:before{
-			left: -5px;
-			width: 110px;
 			height: 0;
-
 			background-color: rgba(246,210,87,.5);
-			border-radius: 50%;
 		}
 
 		.icon:hover:before{
-			height: 110px;
+			height: 100%;
 		}
 
 		.icon:after{
-			content: "";
-			width: 100px;
-			height: 100px;
-
-			left:-5px;
-			bottom: -20px;
-
-			border-style: solid;
-			border-width: 0px 55px 20px;
-			/*border-color: rgba(255,255,255,.2) transparent;*/
-			border-color: rgba(230,230,230,.1) transparent;
-
-			transform: scale(0.5);
-			transform-origin: top;
-			transition: 1s;
+			transform: scale(1,0.5);
+			transform-origin: bottom;
 		}
 
 		.icon:hover:after{
 			transform: scale(1);
-			border-color: rgba(255,255,255,1) transparent;
 		}
 
 
