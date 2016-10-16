@@ -47,7 +47,7 @@ header{
 }
 
 content{
-	/*background-color: #eee;*/
+	background-color: #eee;
 	height: 1000px;
 }
 
@@ -272,7 +272,7 @@ a.indexa {
 
 /*---滑鼠移過動畫---*/
 
-.icon:before{
+.icon:before, .icon_here:before{
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -288,11 +288,11 @@ a.indexa {
 	transition: 1s;
 }
 
-.icon:hover:before{
-	height: 110px;
+.icon:hover:before, .icon_here:hover:before{
+	height: 120px;
 }
 
-.icon:after{
+.icon:after, .icon_here:after{
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -309,14 +309,16 @@ a.indexa {
 	transform-origin: top;
 	transition: 1s;
 }
+	
 
-.icon:hover:after{
-	transform: scale(1);
+.icon:hover:after, .icon_here:hover:after{
+	transform: scale(1) translateY(10px);
 	border-color: rgba(255,255,255,1) transparent;
 }
 
-
-
+.icon_here:after{ /*當頁的底標tag換色*/
+	border-color: rgba(209,68,118,1) transparent;
+}
 
 
 
