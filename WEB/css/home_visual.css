@@ -339,13 +339,14 @@ a.indexa {
 		}
 
 		.icon p{
-			font-size: 0px;
-			transition: .5s;
+			font-size: 10px;
+			transition: 1s;
+			color: transparent;
 		}
 
 		.icon:hover p{
-			font-size: 2px;
-			transform: scale(1.2);
+			/*transform: scale(1.2);*/
+			color: #666;
 		}
 
 		.logo2:before {
@@ -465,7 +466,7 @@ a.indexa {
 			z-index: 22;
 			font-size: 0;
 
-			top: -200%; /*先藏起來*/
+			top: -2000px; /*先藏起來，藏遠一點*/
 
 			transition: 1s;
 		}
