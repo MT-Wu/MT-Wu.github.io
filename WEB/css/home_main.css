@@ -5,7 +5,9 @@
 @import url(reset.css);
 @import url(home_visual.css);
 @import url(sprite.css);
-/*@import url(home_animax.css);*/
+
+@import url(index_visual.css);
+/*@import url(index_animax.css);*/
 
 
 /*

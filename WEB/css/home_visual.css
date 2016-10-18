@@ -17,16 +17,18 @@ body{
 	background-color: rgba(85,135,162,1);
 }
 
-#wrap{
+.wrap{
 	position: relative;
 	margin: auto;
 	left: 0;
 	right: 0;
+	top:0; 	/*為了做下拉動畫*/
 
 	width: 80%;
 	max-width: 1280px;
 
 	background-color: #fff;
+	transition:2s;
 }
 
 header, content, footer{
@@ -64,7 +66,7 @@ footer{
 
 /*---中央logo區域---*/
 
-a.indexa {
+label.indexa {
 	display: inline-block;
 
 	position: absolute;
@@ -395,7 +397,7 @@ a.indexa {
 
 @media screen and (max-width: 768px) {
 		
-		#wrap{
+		.wrap{
 			width: 100%;
 			background-color: rgba(255,255,255,0);
 		}
