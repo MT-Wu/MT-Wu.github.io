@@ -201,6 +201,15 @@ label.indexa {
 	z-index: 19;
 }
 
+	/*修正下拉會看到藏在下面的黑色logo*/
+		.logo_top img{
+			opacity: 0;
+		}
+		.logo2 ~ .logo_top img{
+			opacity: 1;
+		}
+
+
 /*---置頂左右的banner，先對位置---*/
 .bannerleft, .bannerright{
 	position: absolute;

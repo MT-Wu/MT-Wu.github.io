@@ -12,7 +12,7 @@
 	}
 
 .logoup{
-		position: fixed; 
+		position: absolute; 
 		margin:auto;
 		top:0;
 		right: 0;
@@ -23,26 +23,9 @@
 		height:auto;
 		/*border: 3px solid #fff;*/
 		background: url(../images/LOGOani/LOGOani_name.svg) no-repeat 50% 50%;
-		
+
+		text-align: center;
 	}
-
-.logoup a{
-		display: block;
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		}
-
-p.chinese, p.english{ /*置中於a*/
-		display: block;
-		position: absolute;
-		top:0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		margin: auto;
-	}
-
 
 
 /*****含水層和阻水層的共同設定*****/
@@ -411,6 +394,9 @@ p.chinese, p.english{ /*置中於a*/
 		top:-100%;
 		position: fixed;
 
+		perspective-origin: 50% 250px;
+		perspective: 1000px; 
+
 		z-index: 30;
 
 		transition: 2s;
@@ -418,6 +404,7 @@ p.chinese, p.english{ /*置中於a*/
 
 	#headani:checked ~ .anibg{
 		top:0;
+		transition: 2s;
 	}
 
 	/*控制整個頁面有下拉的感覺*/
@@ -427,6 +414,31 @@ p.chinese, p.english{ /*置中於a*/
      	position: fixed;
      	/*設定fixed可以讓頁面下拉之後其他東西消失，滾輪進而消失*/
 	}
+
+
+/*回首頁感應區，置中*/
+	.headanigo{ 
+			display: inline-block;
+			position: absolute;
+			
+			margin:auto;
+			right: 0;
+			left: 0;
+
+			top:85%;
+			width: 150px;
+			line-height: 50px;
+
+			font-size: 28px;
+			background: rgba(255,255,255,.6);
+			/*border-radius: 20px;*/
+			color: #888;
+
+			transform: rotateX(60deg);
+		}
+
+
+
 
 	
 
