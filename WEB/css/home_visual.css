@@ -17,6 +17,12 @@ body{
 	background-color: rgba(85,135,162,1);
 }
 
+.plant{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
 .wrap{
 	position: relative;
 	margin: auto;
@@ -27,7 +33,7 @@ body{
 	width: 80%;
 	max-width: 1280px;
 
-	background-color: #fff;
+	background-color: rgba(255,255,255,1);
 	transition:2s;
 }
 
@@ -40,7 +46,7 @@ header, content, footer{
 	display: block;
 	width: 100%;
 	
-	background-color: #fff;
+	background-color: rgba(255,255,255,1);
 }
 
 header{
@@ -49,7 +55,7 @@ header{
 }
 
 content{
-	/*background-color: #eee;*/
+	background-color: #eee;
 	height: 1000px;
 }
 
@@ -437,7 +443,7 @@ label.indexa {
 		/*---logo置頂後的樣式---*/
 		.logo_top{
 			width: 100%;
-			background-color: rgba(85,135,162,1);/*先上skyblue底色*/
+			background-color: rgba(85,135,162,0);/*先上skyblue底色*/
 		}
 
 		/*修正手機下拉會看到藏在下面的黑色logo*/
