@@ -483,7 +483,7 @@ label.indexa {
 			z-index: 22;
 			font-size: 0;
 
-			top: -2000px; /*先藏起來，藏遠一點*/
+			top: -2200px; /*先藏起來，藏遠一點*/
 
 			transition: 1s;
 		}

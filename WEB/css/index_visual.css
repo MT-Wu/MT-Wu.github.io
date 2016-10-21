@@ -30,7 +30,7 @@
 	}
 
 	@media screen and (max-width: 1450px) {
-		.anibg{	top:-1000px; }
+		.anibg{	top:-1200px; }
 	}
 
 	/*@media screen and (max-width: 768px) {
@@ -189,7 +189,7 @@
 		}
 
 		@keyframes f2{
-			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px) translateZ(750px);}
+			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px);}
 			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
 		}
 			
