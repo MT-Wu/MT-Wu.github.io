@@ -1,15 +1,93 @@
 @charset "utf-8";
 /* CSS Document */
 
-.back{
+
+/*---設定形象頁---*/
+
+/*把check的方框藏起來*/
+	#headani{
+		position: absolute;
+		left: -9999px;
+		cursor: pointer; /*滑鼠變手手*/
+	}
+
+
+/*滿版俯瞰圖*/
+	.anibg{
 		background: url(../images/school_overall.jpg) no-repeat 50% 0;
 		background-size: cover;
 		width: 100%;
 		height: 100%;
+		top:-1500px;
 		position: fixed;
+
 		perspective-origin: 50% 250px;
-		perspective: 500px; 
+		perspective: 1000px; 
+
+		z-index: -1;
+
+		transition: 3s cubic-bezier(.3,.15,.25,1);
 	}
+
+	@media screen and (max-width: 1450px) {
+		.anibg{	top:-1000px; }
+	}
+
+	/*@media screen and (max-width: 768px) {
+		.anibg{	top:-1000px; }
+	}*/
+
+
+/*形象頁和首頁的切換設定*/
+	#headani:checked ~ .anibg{
+		top:0;
+		z-index: 30;
+		transition: 2s;
+	}
+
+	/*控制整個頁面有下拉的感覺*/
+	#headani:checked ~ .wrap { 
+     	top:100%;
+     	
+     	/*position: fixed;*/
+     	transition: 2s ;
+     	/*設定fixed可以讓頁面下拉之後其他東西消失，滾輪進而消失*/
+	}
+	#headani ~ .wrap { 
+     	top:0;
+     	
+     	position: absolute;
+     	transition:3s;
+     	/*設定讓頁面滑回去*/
+	}
+
+
+/*回首頁感應區，置中*/
+	.headanigo{ 
+			display: inline-block;
+			position: absolute;
+			
+			margin:auto;
+			right: 0;
+			left: 0;
+
+			top:85%;
+			width: 150px;
+			line-height: 50px;
+
+			font-size: 28px;
+			background: rgba(255,255,255,.6);
+			/*border-radius: 20px;*/
+			color: #888;
+
+			transform: rotateX(60deg);
+
+			z-index: 1;
+		}
+
+
+/*=============================================================================================*/
+/*中間logo animation*/
 
 .logoup{
 		position: absolute; 
@@ -45,13 +123,16 @@
 	.g2{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
 		}
 
-		/*.g2:hover {
-			transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);
-		}*/
+		#headani:checked ~ .anibg .g2 {
+			animation: g2 .8s 2s linear 1 backwards ;
+		}
+
+		@keyframes g2{
+			  0%{transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*g2內部*/
 			.g2front{
@@ -101,13 +182,16 @@
 	.f2{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
 		}
 
-		/*.f2:hover {
-			transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateZ(250px);
-		}*/
+		#headani:checked ~ .anibg .f2 {
+			animation: f2 1s 3.25s ease 1 backwards ;
+		}
+
+		@keyframes f2{
+			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px) translateZ(750px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*F2內部*/
 			.f2front{
@@ -157,14 +241,16 @@
 	.t2{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
+		}
+		
+		#headani:checked ~ .anibg .t2 {
+			animation: t2 1s 3s linear 1 backwards ;
 		}
 
-		/*.t2:hover{
-			transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);
-			
-		}*/
+		@keyframes t2{
+			  0%{transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg)  translateZ(250px) translateX(750px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*T2內部*/
 			.t2front{
@@ -214,14 +300,16 @@
 	.f1{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
+		}
+		
+		#headani:checked ~ .anibg .f1 {
+			animation: f1 1s 2.75s ease 1 backwards ;
 		}
 
-		/*.f1:hover{
-			transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);
-			
-		}*/
+		@keyframes f1{
+			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px) translateZ(-750px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*f1內部*/
 			.f1front{
@@ -271,14 +359,16 @@
 	.t1{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
 		}
 
-		/*.t1:hover{
-			transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);
-			
-		}*/
+		#headani:checked ~ .anibg .t1 {
+			animation: t1 1s 2.5s linear 1 backwards ;
+		}
+
+		@keyframes t1{
+			  0%{transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg)  translateZ(250px) translateX(-750px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*t1內部*/
 			.t1front{
@@ -328,13 +418,16 @@
 	.g1{
 		transform-style: preserve-3d;
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-
-		transition: 5s;
 		}
 
-		/*.g1:hover {
-			transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateZ(250px);
-		}*/
+		#headani:checked ~ .anibg .g1 {
+			animation: g1 .8s 2.25s linear 1 backwards ;
+		}
+
+		@keyframes g1{
+			  0%{transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg) translateZ(250px);}
+			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+		}
 			
 		/*g1內部*/
 			.g1front{
@@ -382,8 +475,8 @@
 
 
 
-/*****其他圖片*****/
-.cloud, .mountain, .flow, .river{
+/*****其他圖層共同設定*****/
+.cloud, .flow, .mountain, .river, .sun{
 	position: absolute;
 
 	margin:auto;
@@ -397,205 +490,249 @@
 
 	transform-style: preserve-3d; /*讓下層支援3D*/
 	}
-	
+
+
+/*雲朵*/
 	.cloud1{
 		background: url(../images/LOGOani/LOGOani_cloud1.svg) no-repeat 50% 50%;
 		min-height: 400px;
-		transform: translateZ(-250px);
+		transform: translateZ(0px);
 	}
+		#headani:checked ~ .anibg .cloud1{
+		animation: cloud1 2s 4s 1 backwards ;
+		}
+
+		@keyframes cloud1{
+			  0%{transform: translateZ(-250px);}
+			100%{transform: translateZ(0px);}
+		}
+
 	.cloud2{
 		background: url(../images/LOGOani/LOGOani_cloud2.svg) no-repeat 50% 50%;
 		min-height: 400px;
-		transform: translateZ(-250px);
+		transform: translateZ(-100px);
 	}
+		#headani:checked ~ .anibg .cloud2{
+		animation: cloud2 2s 4s 1 backwards ;
+		}
+
+		@keyframes cloud2{
+			  0%{transform: translateZ(-250px);}
+			100%{transform: translateZ(-100px);}
+		}
+
 	.cloud3{
 		background: url(../images/LOGOani/LOGOani_cloud3.svg) no-repeat 50% 50%;
 		min-height: 400px;
-		transform: translateZ(-250px);
+		transform: translateZ(-200px);
 	}
+		#headani:checked ~ .anibg .cloud3{
+		animation: cloud3 2s 4s 1 backwards ;
+		}
+		@keyframes cloud3{
+			  0%{transform: translateZ(-250px);}
+			100%{transform: translateZ(-200px);}
+		}
 
+
+/*雨水水流*/
 	.flow{
 		background: url(../images/LOGOani/LOGOani_flow1.svg) no-repeat 50% 50%,
 					url(../images/LOGOani/LOGOani_flow2.svg) no-repeat 50% 50%;
 		transform: rotateX(90deg) scaleY(5);
 		opacity: .75;
 		min-height: 400px;
+		}
 
-		animation: flow 5s 1 ease backwards; 
-	}
+		#headani:checked ~ .anibg .flow{
+		animation: flow 4s 5.5s ease backwards; 
+		}
 
-	@keyframes flow{
-		0%{transform: rotateX(0deg) scaleY(5);}
-		50%{transform: rotateX(0deg)scaleY(1);}
-		75%{transform: rotateX(90deg) scaleY(1);}
+		@keyframes flow{
+		  0%{opacity: 0;
+			transform: rotateX(0deg) scaleY(3);}
+		 25%{opacity: 1;}
+		 50%{transform: rotateX(0deg)scaleY(1);}
+		 75%{transform: rotateX(90deg) scaleY(1);}
 		100%{transform: rotateX(90deg) scaleY(5);}
-	}
+		}
 
+
+/*山丘*/
 	.mm1{
 		background:  url(../images/LOGOani/LOGOani_m2.svg) no-repeat 50% 50%;
 		min-height: 400px;
-		transform: scaleY(1);
-	}
+		transform: scaleY(1);}
+		
+		#headani:checked ~ .anibg .mm1{
+			animation: mm 1s 9s 1 backwards ;
+		}
 
-		.mm2{
-			background:  url(../images/LOGOani/LOGOani_m3.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
+	.mm2{
+		background:  url(../images/LOGOani/LOGOani_m3.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
+
+		#headani:checked ~ .anibg .mm2{
+			animation: mm 1s 9.25s 1 backwards ;
 		}
 
 
-		.mm3{
-			background:  url(../images/LOGOani/LOGOani_m4.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+	.mm3{
+		background:  url(../images/LOGOani/LOGOani_m4.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
 
-		.mm4{
-			background:  url(../images/LOGOani/LOGOani_m5.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
-
-		.mm5{
-			background:  url(../images/LOGOani/LOGOani_m6.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
-
-		.mm6{
-			background:  url(../images/LOGOani/LOGOani_m7.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
-
-		.mm7{
-			background:  url(../images/LOGOani/LOGOani_m8.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
+		#headani:checked ~ .anibg .mm3{
+			animation: mm 1s 9.5s 1 backwards ;
 		}
 
 
-	.river1{
+	.mm4{	
+		background:  url(../images/LOGOani/LOGOani_m5.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
+
+		#headani:checked ~ .anibg .mm4{
+			animation: mm 1s 9.75s 1 backwards ;
+		}
+
+		
+	.mm5{
+		background:  url(../images/LOGOani/LOGOani_m6.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
+
+		#headani:checked ~ .anibg .mm5{
+			animation: mm 1s 10s 1 backwards ;
+		}
+
+	
+	.mm6{
+		background:  url(../images/LOGOani/LOGOani_m7.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
+
+		#headani:checked ~ .anibg .mm6{
+			animation: mm 1s 10s 1 backwards ;
+		}
+
+	
+	.mm7{	
+		background:  url(../images/LOGOani/LOGOani_m8.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: scaleY(1);}
+
+		#headani:checked ~ .anibg .mm7{
+			animation: mm 2s 11s 1 backwards ;
+		}
+
+		@keyframes mm{
+			  0%{transform: scaleY(0);}
+			100%{transform: scaleY(1);}
+		}
+
+
+/*太陽*/
+	.sun{
+		background:  url(../images/LOGOani/LOGOani_sun.svg) no-repeat 50% 50%;
+		min-height: 400px;
+		transform: translateY(0px);}
+
+		#headani:checked ~ .anibg .sun{
+			animation: sun 2s 11s 1 backwards ;
+		}
+
+		@keyframes sun{
+			  0%{opacity: 0;
+			  	 transform: translateY(80px);}
+			100%{opacity: 1;
+				 transform: translateY(0px);}
+		}
+
+
+/*Ｓ溪流*/
+		.river1{
 			background:  url(../images/LOGOani/LOGOani_river1.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+			min-height: 400px;}
 
-	.river2{
+			#headani:checked ~ .anibg .river1{
+				animation: river 1s 13.1s 1 backwards ;
+			}
+
+
+		.river2{
 			background:  url(../images/LOGOani/LOGOani_river2.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+			min-height: 400px;}
 
-	.river3{
+			#headani:checked ~ .anibg .river2{
+				animation: river 1s 13.2s 1 backwards ;
+			}
+
+
+		.river3{
 			background:  url(../images/LOGOani/LOGOani_river3.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+			min-height: 400px;}
 
-	.river4{
+			#headani:checked ~ .anibg .river3{
+				animation: river 1s 13.3s 1 backwards ;
+			}
+
+
+		.river4{
 			background:  url(../images/LOGOani/LOGOani_river4.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+			min-height: 400px;}
 
-	.river5{
+			#headani:checked ~ .anibg .river4{
+				animation: river 1s 13.4s 1 backwards ;
+			}
+
+
+		.river5{
 			background:  url(../images/LOGOani/LOGOani_river5.svg) no-repeat 50% 50%;
-			min-height: 400px;
-			transform: scaleY(1);
-		}
+			min-height: 400px;}
 
-	
-
-
+			#headani:checked ~ .anibg .river5{
+				animation: river 1s 13.5s 1 backwards ;
+			}
 
 
-
-
-/*---設定形象頁---*/
-
-/*把check的方框藏起來*/
-	#headani{
-		position: absolute;
-		left: -9999px;
-		cursor: pointer; /*滑鼠變手手*/
-	}
-
-	.anibg{
-		background: url(../images/school_overall.jpg) no-repeat 50% 0;
-		background-size: cover;
-		width: 100%;
-		height: 100%;
-		top:-1500px;
-		position: fixed;
-
-		perspective-origin: 50% 250px;
-		perspective: 1000px; 
-
-		z-index: -1;
-
-		transition: 3s cubic-bezier(.3,.15,.25,1);
-	}
-
-	@media screen and (max-width: 1450px) {
-		.anibg{	top:-1000px; }
-	}
-
-	/*@media screen and (max-width: 768px) {
-		.anibg{	top:-1000px; }
-	}*/
-
-
-	#headani:checked ~ .anibg{
-		top:0;
-		z-index: 30;
-		transition: 2s;
-	}
-
-	/*控制整個頁面有下拉的感覺*/
-	#headani:checked ~ .wrap { 
-     	top:100%;
-     	
-     	/*position: fixed;*/
-     	transition: 2s ;
-     	/*設定fixed可以讓頁面下拉之後其他東西消失，滾輪進而消失*/
-	}
-	#headani ~ .wrap { 
-     	top:0;
-     	
-     	position: absolute;
-     	transition:3s;
-     	/*設定讓頁面滑回去*/
-	}
-
-
-/*回首頁感應區，置中*/
-	.headanigo{ 
-			display: inline-block;
-			position: absolute;
-			
-			margin:auto;
-			right: 0;
-			left: 0;
-
-			top:85%;
-			width: 150px;
-			line-height: 50px;
-
-			font-size: 28px;
-			background: rgba(255,255,255,.6);
-			/*border-radius: 20px;*/
-			color: #888;
-
-			transform: rotateX(60deg);
+		@keyframes river{
+			  0%{opacity: 0;}
+			100%{opacity: 1;}
 		}
 
 
 
+/*中線展開*/
+	.miao {
+		  float: left;
+		  position: absolute; 
+		  margin:auto;
+		  top:0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		}
 
+		#headani:checked ~ .anibg .logoup .miao {
+		  animation: line 2s 0s 1 forwards;}
 
+		@keyframes line{
+			  0%{
+			        width: 5px;
+			        height: 5px;
+			        background-color: #ccc;
+			        border-radius: 50%;
+			    }
+		50%,100%{ 
+				      width: 80%;
+				      height: 5px;
+				      border-radius: 50%;
+				      background-color: #fff;
+				}
+		}
 
-	
 
 
 
