@@ -383,7 +383,7 @@
 
 
 /*****其他圖片*****/
-.cloud, .mountain, .flow{
+.cloud, .mountain, .flow, .river{
 	position: absolute;
 
 	margin:auto;
@@ -417,7 +417,7 @@
 	.flow{
 		background: url(../images/LOGOani/LOGOani_flow1.svg) no-repeat 50% 50%,
 					url(../images/LOGOani/LOGOani_flow2.svg) no-repeat 50% 50%;
-		transform: rotateX(90deg) scaleY(2);
+		transform: rotateX(90deg) scaleY(5);
 		opacity: .75;
 		min-height: 400px;
 
@@ -425,17 +425,91 @@
 	}
 
 	@keyframes flow{
-		0%{transform: rotateX(0deg) scaleY(1);}
-		100%{transform: rotateX(90deg) scaleY(2) translateY(-20px);}
-
+		0%{transform: rotateX(0deg) scaleY(5);}
+		50%{transform: rotateX(0deg)scaleY(1);}
+		75%{transform: rotateX(90deg) scaleY(1);}
+		100%{transform: rotateX(90deg) scaleY(5);}
 	}
 
-	.mm{
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-image:  url(../images/LOGOani/LOGOani_m2.svg);
+	.mm1{
+		background:  url(../images/LOGOani/LOGOani_m2.svg) no-repeat 50% 50%;
 		min-height: 400px;
+		transform: scaleY(1);
 	}
+
+		.mm2{
+			background:  url(../images/LOGOani/LOGOani_m3.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+
+		.mm3{
+			background:  url(../images/LOGOani/LOGOani_m4.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+		.mm4{
+			background:  url(../images/LOGOani/LOGOani_m5.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+		.mm5{
+			background:  url(../images/LOGOani/LOGOani_m6.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+		.mm6{
+			background:  url(../images/LOGOani/LOGOani_m7.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+		.mm7{
+			background:  url(../images/LOGOani/LOGOani_m8.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+
+	.river1{
+			background:  url(../images/LOGOani/LOGOani_river1.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+	.river2{
+			background:  url(../images/LOGOani/LOGOani_river2.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+	.river3{
+			background:  url(../images/LOGOani/LOGOani_river3.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+	.river4{
+			background:  url(../images/LOGOani/LOGOani_river4.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+	.river5{
+			background:  url(../images/LOGOani/LOGOani_river5.svg) no-repeat 50% 50%;
+			min-height: 400px;
+			transform: scaleY(1);
+		}
+
+	
+
+
+
+
 
 
 /*---設定形象頁---*/
