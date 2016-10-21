@@ -8,7 +8,7 @@
 		height: 100%;
 		position: fixed;
 		perspective-origin: 50% 250px;
-		perspective: 1000px; 
+		perspective: 500px; 
 	}
 
 .logoup{
@@ -374,7 +374,53 @@
 
 
 
+/*****其他圖片*****/
+.cloud, .mountain, .flow{
+	position: absolute;
 
+	margin:auto;
+		top:0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+	width: 500px;
+	height:auto;
+	}
+	
+	.cloud1{
+		background: url(../images/LOGOani/LOGOani_cloud1.svg) no-repeat 50% 50%;
+		transform: translateZ(-250px);
+	}
+	.cloud2{
+		background: url(../images/LOGOani/LOGOani_cloud2.svg) no-repeat 50% 50%;
+		transform: translateZ(-250px);
+	}
+	.cloud3{
+		background: url(../images/LOGOani/LOGOani_cloud3.svg) no-repeat 50% 50%;
+		transform: translateZ(-250px);
+	}
+
+	.flow{
+		background: url(../images/LOGOani/LOGOani_flow1.svg) no-repeat 50% 50%,
+					url(../images/LOGOani/LOGOani_flow2.svg) no-repeat 50% 50%;
+		transform: rotateX(90deg) scaleY(2);
+		opacity: .75;
+
+		animation: flow 5s 1 ease backwards; 
+	}
+
+	@keyframes flow{
+		0%{transform: rotateX(0deg) scaleY(1);}
+		100%{transform: rotateX(90deg) scaleY(1) translateY(-20px);}
+
+	}
+
+	.mm{
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image:  url(../images/LOGOani/LOGOani_m2.svg);
+	}
 
 
 /*---設定形象頁---*/
@@ -410,9 +456,17 @@
 	/*控制整個頁面有下拉的感覺*/
 	#headani:checked ~ .wrap { 
      	top:100%;
-     	transition:2s;
-     	position: fixed;
+     	
+     	/*position: fixed;*/
+     	transition: 2s ;
      	/*設定fixed可以讓頁面下拉之後其他東西消失，滾輪進而消失*/
+	}
+	#headani ~ .wrap { 
+     	top:0;
+     	
+     	position: absolute;
+     	transition:2s;
+     	/*設定讓頁面滑回去*/
 	}
 
 
@@ -436,6 +490,8 @@
 
 			transform: rotateX(60deg);
 		}
+
+
 
 
 

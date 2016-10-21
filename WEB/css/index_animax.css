@@ -3,7 +3,6 @@
 
 /*中線展開*/
 .miao {
-  
   animation-name: line;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -54,6 +53,7 @@
     width: 100%; 
   }
 }
+
 
 
 

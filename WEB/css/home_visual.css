@@ -34,7 +34,7 @@ body{
 	max-width: 1280px;
 
 	background-color: rgba(255,255,255,1);
-	transition:2s;
+	transition:top 2s;
 }
 
 header, content, footer{
@@ -149,7 +149,6 @@ label.indexa {
 	top: -43px;
 
 	transition: .2s;
-
 }
 
 /*logo下面的三角*/
