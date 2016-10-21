@@ -394,6 +394,8 @@
 
 	width: 500px;
 	height:auto;
+
+	transform-style: preserve-3d; /*讓下層支援3D*/
 	}
 	
 	.cloud1{
@@ -424,7 +426,7 @@
 
 	@keyframes flow{
 		0%{transform: rotateX(0deg) scaleY(1);}
-		100%{transform: rotateX(90deg) scaleY(1) translateY(-20px);}
+		100%{transform: rotateX(90deg) scaleY(2) translateY(-20px);}
 
 	}
 
@@ -456,13 +458,23 @@
 		perspective-origin: 50% 250px;
 		perspective: 1000px; 
 
-		z-index: 30;
+		z-index: -1;
 
-		transition: 3s;
+		transition: 3s cubic-bezier(.3,.15,.25,1);
 	}
+
+	@media screen and (max-width: 1450px) {
+		.anibg{	top:-1000px; }
+	}
+
+	/*@media screen and (max-width: 768px) {
+		.anibg{	top:-1000px; }
+	}*/
+
 
 	#headani:checked ~ .anibg{
 		top:0;
+		z-index: 30;
 		transition: 2s;
 	}
 
@@ -478,7 +490,7 @@
      	top:0;
      	
      	position: absolute;
-     	transition:2s;
+     	transition:3s;
      	/*設定讓頁面滑回去*/
 	}
 
