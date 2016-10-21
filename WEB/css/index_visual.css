@@ -23,6 +23,7 @@
 		height:auto;
 		/*border: 3px solid #fff;*/
 		background: url(../images/LOGOani/LOGOani_name.svg) no-repeat 50% 50%;
+		min-height: 400px;
 
 		text-align: center;
 	}
@@ -36,7 +37,8 @@
 		top:0;
 		right: 0;
 		bottom: 0;
-		left: 0;	
+		left: 0;
+
 	}
 
 	/*G2地層*/
@@ -55,6 +57,7 @@
 			.g2front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_g2.svg) no-repeat 50% 50%;
 				}
 
@@ -110,6 +113,7 @@
 			.f2front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_f2.svg) no-repeat 50% 50%;
 				}
 
@@ -166,6 +170,7 @@
 			.t2front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_t2.svg) no-repeat 50% 50%;
 				}
 
@@ -222,6 +227,7 @@
 			.f1front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_f1.svg) no-repeat 50% 50%;
 				}
 
@@ -278,6 +284,7 @@
 			.t1front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_t1.svg) no-repeat 50% 50%;
 				}
 
@@ -333,6 +340,7 @@
 			.g1front{
 					width: 500px;
 					height:auto;
+					min-height: 400px;
 					background: url(../images/LOGOani/LOGOani_g1.svg) no-repeat 50% 50%;
 				}
 
@@ -390,14 +398,17 @@
 	
 	.cloud1{
 		background: url(../images/LOGOani/LOGOani_cloud1.svg) no-repeat 50% 50%;
+		min-height: 400px;
 		transform: translateZ(-250px);
 	}
 	.cloud2{
 		background: url(../images/LOGOani/LOGOani_cloud2.svg) no-repeat 50% 50%;
+		min-height: 400px;
 		transform: translateZ(-250px);
 	}
 	.cloud3{
 		background: url(../images/LOGOani/LOGOani_cloud3.svg) no-repeat 50% 50%;
+		min-height: 400px;
 		transform: translateZ(-250px);
 	}
 
@@ -406,6 +417,7 @@
 					url(../images/LOGOani/LOGOani_flow2.svg) no-repeat 50% 50%;
 		transform: rotateX(90deg) scaleY(2);
 		opacity: .75;
+		min-height: 400px;
 
 		animation: flow 5s 1 ease backwards; 
 	}
@@ -420,6 +432,7 @@
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-image:  url(../images/LOGOani/LOGOani_m2.svg);
+		min-height: 400px;
 	}
 
 
@@ -437,7 +450,7 @@
 		background-size: cover;
 		width: 100%;
 		height: 100%;
-		top:-100%;
+		top:-1500px;
 		position: fixed;
 
 		perspective-origin: 50% 250px;
@@ -445,7 +458,7 @@
 
 		z-index: 30;
 
-		transition: 2s;
+		transition: 3s;
 	}
 
 	#headani:checked ~ .anibg{
