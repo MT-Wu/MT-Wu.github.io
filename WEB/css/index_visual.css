@@ -205,7 +205,8 @@
 		}
 
 		@keyframes f2{
-			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px);}
+			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-500px);}
+			 50%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(100px);}
 			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
 		}
 			
@@ -323,7 +324,7 @@
 		}
 
 		@keyframes f1{
-			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(250px) translateZ(-750px);}
+			  0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)  translateZ(-500px);}
 			100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
 		}
 			
@@ -747,6 +748,20 @@
 				      background-color: #fff;
 				}
 		}
+
+
+/*____________________________________________________________________________*/
+
+/*==========手機版本==========*/
+
+@media screen and (max-width: 768px){
+
+}
+
+
+
+
+
 
 
 
