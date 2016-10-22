@@ -49,10 +49,11 @@
 	#headani:checked ~ .wrap { 
      	top:100%;
      	
-     	/*position: fixed;*/
+     	position: fixed;
      	transition: 2s ;
      	/*設定fixed可以讓頁面下拉之後其他東西消失，滾輪進而消失*/
 	}
+
 	#headani ~ .wrap { 
      	top:0;
      	
@@ -60,6 +61,21 @@
      	transition:3s;
      	/*設定讓頁面滑回去*/
 	}
+
+	/*控制icon欄位一起下拉*/
+	#headani:checked ~ .wrap header .logo_top { 
+     	top:100%;
+     	
+     	transition: 2s ;
+	}
+
+	#headani ~ .wrap header .logo_top { 
+ 	top:0;
+ 	
+ 	transition: 3s ;
+	}
+
+	
 
 
 /*回首頁感應區，置中*/
