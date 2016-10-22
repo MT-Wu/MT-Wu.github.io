@@ -732,7 +732,7 @@
 		}
 
 		#headani:checked ~ .anibg .logoup .miao {
-		  animation: line 2s 0s 1 forwards;}
+		  animation: line 2s 1s 1 forwards;}
 
 		@keyframes line{
 			  0%{
@@ -741,7 +741,7 @@
 			        background-color: #ccc;
 			        border-radius: 50%;
 			    }
-		50%,100%{ 
+			100%{ 
 				      width: 80%;
 				      height: 5px;
 				      border-radius: 50%;
@@ -750,13 +750,207 @@
 		}
 
 
-/*____________________________________________________________________________*/
 
-/*==========手機版本==========*/
+
+/*=============================================================================================*/
+/*==========手機版本動畫==========*/
 
 @media screen and (max-width: 768px){
 
+
+/*中間logo animation*/
+
+	.logoup{
+			width: 90%;
+		}
+
+
+	/*****含水層和阻水層的共同設定*****/
+
+	/*G2地層*/
+
+		/*g2內部*/
+			.g2front{
+					width: 90%;
+				}
+
+			.g2top, .g2bottom, .g2back, .g2left, .g2right{
+				display: none;
+			}
+
+
+	/*F2含水層*/
+
+		/*F2內部*/
+			.f2front{
+					width: 90%;
+				}
+
+			.f2top, .f2bottom, .f2back, .f2left, .f2right{
+				display: none;
+				}
+
+
+	/*T2阻水層*/
+	
+		/*T2內部*/
+			.t2front{
+					width: 90%;
+				}
+
+			.t2top, .t2bottom, .t2back, .t2left, .t2right{
+				display: none;
+				}
+
+
+	/*F1含水層*/
+			
+		/*f1內部*/
+			.f1front{
+					width: 90%;
+				}
+			.f1top, .f1bottom, .f1back, .f1left, .f1right{
+				display: none;
+				}
+
+	/*T1阻水層*/
+		
+		/*t1內部*/
+			.t1front{
+					width: 90%;
+				}
+
+			.t1top, .t1bottom, .t1back, .t1left, .t1right{
+				display: none;
+				}
+
+
+
+	/*G1地層*/
+	
+		/*g1內部*/
+			.g1front{
+					width: 90%;
+				}
+
+			.g1top, .g1bottom, .g1back, .g1left, .g1right{
+				display: none;
+				}
+
+
+
+	/*****其他圖層共同設定*****/
+
+		.cloud, .flow, .mountain, .river, .sun{
+			width: 100%;
+			}
+
+		/*雲朵*/
+			.cloud1, .cloud2, .cloud3{
+				width: 90%;
+			}
+			
+		/*雨水水流*/
+			.flow1{
+				display: none;
+				}
+
+
+		/*山丘*/
+			.mm1, .mm2, .mm3, .mm4, .mm5, .mm6, .mm7{
+				width: 90%;
+				}
+
+
+				#headani:checked ~ .anibg .mm1{
+					animation: mm 1s 5s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm2{
+					animation: mm 1s 5.25s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm3{
+					animation: mm 1s 5.5s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm4{
+					animation: mm 1s 5.75s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm5{
+					animation: mm 1s 6s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm6{
+					animation: mm 1s 6s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .mm7{
+					animation: mm 2s 7s 1 backwards ;
+				}
+
+
+		/*太陽*/
+			.sun{
+				width: 90%;
+				}
+
+				#headani:checked ~ .anibg .sun{
+					animation: sun 2s 7s 1 backwards ;
+				}
+
+
+		/*Ｓ溪流*/
+			.river1, .river2, .river3, .river4, .river5{
+				width: 90%;
+				}
+
+				#headani:checked ~ .anibg .river1{
+					animation: river 1s 9.1s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .river2{
+					animation: river 1s 9.2s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .river3{
+					animation: river 1s 9.3s 1 backwards ;
+				}
+
+
+				#headani:checked ~ .anibg .river4{
+					animation: river 1s 9.4s 1 backwards ;
+				}
+
+				#headani:checked ~ .anibg .river5{
+					animation: river 1s 9.5s 1 backwards ;
+				}
+
+
+		/*中線展開*/
+			.miao {
+				width: 90%;
+				}
+
+				@keyframes line{
+				  0%{
+				        width: 5px;
+				        height: 5px;
+				        background-color: #ccc;
+				        border-radius: 50%;
+				    }
+				100%{ 
+					      width: 90%;
+					      height: 5px;
+					      border-radius: 50%;
+					      background-color: #fff;
+					}
+				}
+
+
 }
+/*手機版本結束*/
 
 
 
