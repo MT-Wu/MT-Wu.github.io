@@ -507,7 +507,6 @@
 	transform-style: preserve-3d; /*讓下層支援3D*/
 	}
 
-
 /*雲朵*/
 	.cloud1{
 		background: url(../images/LOGOani/LOGOani_cloud1.svg) no-repeat 50% 50%;
@@ -552,25 +551,25 @@
 
 
 /*雨水水流*/
-	.flow{
+	.flow1{
 		background: url(../images/LOGOani/LOGOani_flow1.svg) no-repeat 50% 50%,
 					url(../images/LOGOani/LOGOani_flow2.svg) no-repeat 50% 50%;
-		transform: rotateX(90deg) scaleY(5);
+		transform: rotateX(90deg) scaleY(5) translateY(-200px);
 		opacity: .75;
 		min-height: 400px;
 		}
 
-		#headani:checked ~ .anibg .flow{
-		animation: flow 4s 5.5s ease backwards; 
+		#headani:checked ~ .anibg .flow1{
+		animation: flow1 4s 5.5s ease backwards; 
 		}
 
-		@keyframes flow{
+		@keyframes flow1{
 		  0%{opacity: 0;
-			transform: rotateX(0deg) scaleY(3);}
-		 25%{opacity: 1;}
-		 50%{transform: rotateX(0deg)scaleY(1);}
-		 75%{transform: rotateX(90deg) scaleY(1);}
-		100%{transform: rotateX(90deg) scaleY(5);}
+			 transform: rotateX(0deg) scaleY(3) translateY(-200px);}
+		 25%{opacity: .75;}
+		 50%{transform: rotateX(0deg)scaleY(1) translateY(-200px);}
+		 75%{transform: rotateX(90deg) scaleY(1) translateY(-200px);}
+		100%{transform: rotateX(90deg) scaleY(5) translateY(-200px);}
 		}
 
 
