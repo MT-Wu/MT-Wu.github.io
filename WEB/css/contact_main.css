@@ -92,7 +92,7 @@ footer{
 
 /*==========平板版本==========*/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {/*950px開始把地圖放到下面*/
 
 	content{
 		height: 950px;
