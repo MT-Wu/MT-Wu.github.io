@@ -6,12 +6,10 @@
 @import url(home_header.css);
 @import url(home_footer.css);
 @import url(sprite.css);
-
 @import url(index_visual.css);
 
 
 /*
-@import url(layout.css);
 @import url(googleicon.css);
 */
 
@@ -78,7 +76,7 @@ header{
 
 content{
 	background-color: #fff;
-	height: 1000px;
+	height: 600px;
 }
 
 footer{
@@ -87,40 +85,3 @@ footer{
 }
 
 
-
-/*____________________________________________________________________________*/
-
-/*---調整平板版和手機版---*/
-
-/*==========平板版本==========*/
-
-@media screen and (max-width: 1250px) {
-
-}
-
-
-
-/*____________________________________________________________________________*/
-
-/*==========手機版本==========*/
-
-@media screen and (max-width: 768px) {
-	
-	.wrap{
-			width: 100%;
-			background-color: rgba(255,255,255,0);
-			top: 0;
-		}
-
-		header{
-			width: 100%;
-			height: 130px;
-			background-color: rgba(255,255,255,0);
-		}
-
-		content, footer{
-			width: 80%;
-			min-width: 300px;
-		}
-
-}
