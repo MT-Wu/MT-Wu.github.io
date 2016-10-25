@@ -29,9 +29,9 @@
 		transition: 3s cubic-bezier(.3,.15,.25,1);
 	}
 
-/*	@media screen and (max-width: 1450px) {
+	@media screen and (max-width: 1450px) {
 		.anibg{	top:-1200px; }
-	}*/
+	}
 
 	/*@media screen and (max-width: 768px) {
 		.anibg{	top:-1000px; }
@@ -76,6 +76,29 @@
 	}
 
 	
+
+
+/*=============================================================================================*/
+/*中間logo animation*/
+
+.logoup{
+		position: absolute; 
+		margin:auto;
+		top:0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		width: 500px;
+		height:auto;
+		/*border: 3px solid #fff;*/
+		background: url(../images/LOGOani/LOGOani_name.svg) no-repeat 50% 50%;
+		min-height: 400px;
+
+		text-align: center;
+		/*transform-style: preserve-3d;*/
+	}
+
 
 
 /*進首頁感應區ENTER，置中*/
@@ -156,26 +179,6 @@
 
 
 
-/*=============================================================================================*/
-/*中間logo animation*/
-
-.logoup{
-		position: absolute; 
-		margin:auto;
-		top:0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-
-		width: 500px;
-		height:auto;
-		/*border: 3px solid #fff;*/
-		background: url(../images/LOGOani/LOGOani_name.svg) no-repeat 50% 50%;
-		min-height: 400px;
-
-		text-align: center;
-		/*transform-style: preserve-3d;*/
-	}
 
 
 /*****含水層和阻水層的共同設定*****/
