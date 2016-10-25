@@ -144,19 +144,19 @@ iframe{
 	
 	p.address{
 		display: inline-block;/*為了置中對齊*/
-		width: 285px;/*下固定寬讓google icon可以定位*/
+		width: 230px;/*下固定寬讓google icon可以定位*/
 		margin: 20px 0 40px;
 	}
 
 	i.material-icons.email{
 	position: absolute;
-	left: 50px;
-	top: 100px;
+	left: 20px;
+	top: 99px;
 	}
 
 	i.material-icons.phone{
 		position: absolute;
-		left: 85px;
+		left: 55px;
 		top: 130px;
 	}
 
