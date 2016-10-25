@@ -29,9 +29,9 @@
 		transition: 3s cubic-bezier(.3,.15,.25,1);
 	}
 
-	@media screen and (max-width: 1450px) {
+/*	@media screen and (max-width: 1450px) {
 		.anibg{	top:-1200px; }
-	}
+	}*/
 
 	/*@media screen and (max-width: 768px) {
 		.anibg{	top:-1000px; }
