@@ -3,13 +3,13 @@
 
 
 @import url(reset.css);
+@import url(contact_content.css);
 
 @import url(home_header.css);
 @import url(home_footer.css);
 @import url(sprite.css);
 @import url(index_visual.css);
 
-@import url(contact_content.css);
 
 /*
 @import url(googleicon.css);
