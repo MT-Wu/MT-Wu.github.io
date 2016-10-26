@@ -78,7 +78,7 @@ header{
 
 content{
 	background-color: #fff;
-	height: 508px;
+	height: 550px;
 }
 
 footer{
@@ -95,7 +95,7 @@ footer{
 @media screen and (max-width: 950px) {/*950px開始把地圖放到下面*/
 
 	content{
-		height: 950px;
+		height:1010px;
 	}
 	
 }
