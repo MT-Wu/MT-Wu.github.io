@@ -78,7 +78,7 @@ header{
 
 content{
 	background-color: #fff;
-	height: 4260px;
+	/*padding: 0 0 55px;*/
 }
 
 footer{
@@ -95,7 +95,7 @@ footer{
 @media screen and (max-width: 950px) {/*950px開始把地圖放到下面*/
 
 	content{
-		height:1010px;
+		
 	}
 	
 }
@@ -120,6 +120,7 @@ footer{
 
 		content, footer{
 			width: 80%;
+			height: 100%; /*完全撐開到margin*/
 			min-width: 300px;
 		}
 
