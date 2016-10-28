@@ -99,13 +99,24 @@ input.btn{
 	height: 400px;
 	width: 55%;
 	position: absolute;
-	right: 0;
+	
 	bottom: 0;
 
 	margin: 75px 75px;
 
 	z-index: 5;
+
+	/*進場前置設定*/
+	opacity: 0;
+	right: -100px;
 }
+
+	/*進場動畫*/
+	.inview{
+		opacity: 1;
+		right: 0;
+		transition: 3s;
+	}
 
 iframe{
 	width: 100%;

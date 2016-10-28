@@ -14,7 +14,7 @@
 	top: -20px;
 	text-align: center;
 	width: 100%;
-	background-image: linear-gradient(90deg,transparent 10% ,#faa 30%,#faa 70%,transparent 90%);
+	background-image: linear-gradient(90deg,transparent 10% ,#ffa 30%,#faa 70%,transparent 90%);
 }
 	/*第二選單fixed*/
 	.secondbanner2{
@@ -259,6 +259,20 @@ h2:after{
 	font-size: 14px;
 	color: #666;
 	line-height: 24px;
+
+}
+
+
+
+
+
+/*____________________________________________________________________________*/
+
+/*---調整平板版和手機版---*/
+
+/*==========平板版本==========*/
+
+@media screen and (max-width: 1250px) {
 
 }
 
