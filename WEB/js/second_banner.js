@@ -8,18 +8,36 @@ $('.secondbanner li').click(function(){
 })
 
 
-//     var wrap = $(".wrap");
-//     var logo = $(".logo");
 
-// $(window).on("scroll", function(e) {
-//     // console.log(this.scrollY);
-//     // console.log(wrap.height());
-//   if (this.scrollY > 45) {
-//     logo.addClass("logo2");
-//   } 
-//   else {
-//     logo.removeClass("logo2");
-//   }
-  
-// });
+// team分頁的第二選單動畫
+var secondbanner_ul = $(".secondbanner ul");
+
+$window.on("scroll", function(e) {
+	
+	// 依照實際排版偵測各個區段的界限
+    // console.log(this.scrollY);
+	
+	// 移到第二個標籤
+    if (this.scrollY >= 485 && this.scrollY < 1660){
+      secondbanner_ul.addClass('RA');
+    }else{
+      secondbanner_ul.removeClass('RA');
+    }
+
+	// 移到第三個標籤
+    if (this.scrollY >= 1660 && this.scrollY < 2915){
+      secondbanner_ul.addClass('PHD');
+    }else{
+      secondbanner_ul.removeClass('PHD');
+    }
+
+	// 移到第四個標籤
+    if (this.scrollY >= 2915){
+      secondbanner_ul.addClass('MS');
+    }else{
+      secondbanner_ul.removeClass('MS');
+    }
+
+
+});
 
