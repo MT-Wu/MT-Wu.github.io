@@ -20,37 +20,46 @@ h1, h2{
 
 	font-family: 'Cinzel Decorative', cursive;
 	line-height: 24px;	
-
-	margin: 20px 0;
 }
 
 h2{ position: relative;
+	display: inline-block;
 	z-index: 1;
 	/*font-family: 'IM Fell English SC', serif;*/
 	font-family: 'Fredericka the Great', cursive;
 	transform:rotate(-2deg);
 	transform-origin: left;
 
+	margin: 50px 0 25px;
 }
 
-h2:before{
+h2:before, h2:after{
 	content: '';
 	position: absolute;
 	height: 3px;
 	width: 20px;
-	background-color: #888;
+	background-color: #777;
 
 	top: 50%;
-	left: -30px;
-
 }
+
+h2:before{
+	left: -30px;
+	border-radius: 0 100% 100% 0;
+}
+
+h2:after{
+	right: -30px;
+	border-radius: 100% 0 0 100%;
+}
+
 
 
 
 /*---個人區塊---*/
 .oneperson{
 	position: relative;
-	margin: 20px auto 80px;
+	margin: 20px auto 55px;
 	left: 0;
 	right: 0;
 	border: 1px solid #ccc;
@@ -65,7 +74,18 @@ h2:before{
 
 	background: rgba(255,255,255,.9);
 	z-index: 5;
+
+	/*進場前置設定*/
+	opacity: 0;
+	top: 50px;
 }
+
+	/*進場動畫*/
+	.inview{
+		opacity: 1;
+		top: 0px;
+		transition: 2s;
+	}
 
 .oneperson2{
 	background: rgba(102,102,102,.5);
