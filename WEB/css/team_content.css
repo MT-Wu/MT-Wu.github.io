@@ -7,11 +7,72 @@
 }
 
 
-/*標題*/
+/*---第二選單---*/
 .secondbanner{
-	position: fixed;
+	position: absolute;
+	z-index: 10;
+	top: -20px;
 	text-align: center;
+	width: 100%;
+	background-image: linear-gradient(90deg,transparent 10% ,#faa 30%,#faa 70%,transparent 90%);
 }
+.secondbanner2{
+	position: fixed;
+	left: 0;
+	top: 100px;
+	/*transition: 2s;*/
+}
+
+.secondbanner ul{
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+
+	width: 700px;
+}
+
+.secondbanner ul li{
+	position: relative;
+	display: inline-block;
+	height: 66px;
+
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.secondbanner ul li + li:before{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background-color: #699;
+
+	top: 50%;
+	left: -16px;
+}
+
+.secondbanner ul li a{
+	position: relative;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 66px;
+	color:rgba(85,135,162,1);
+
+	font-family: 'IM Fell English SC', serif;
+	letter-spacing: 2px;
+}
+
+
+/*---標題---*/
+
 h1, h2{ 
 	position: relative;
 	font-size: 24px;
@@ -20,6 +81,10 @@ h1, h2{
 
 	font-family: 'Cinzel Decorative', cursive;
 	line-height: 24px;	
+}
+
+h1{
+	z-index: 5;
 }
 
 h2{ position: relative;
@@ -130,8 +195,6 @@ h2:after{
 
 .oneperson p.name span{
 	font-size: 16px;
-	font-weight: bolder;
-
 	font-family: 'IM Fell English SC', serif;
 	/*font-family: 'Amita', cursive;*/
 }

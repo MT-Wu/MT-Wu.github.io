@@ -46,3 +46,4 @@ $window.on('scroll resize', check_if_in_view);
 // 因為有可能載入畫面時，剛好停在有動畫元件的位置，這時就寫下面這行，window一載入就觸發scroll事件，
 // 讓他跑:40行的 $window.on('scroll resize', check_if_in_view)，來確定他是否要進場。
 $window.trigger('scroll');
+
