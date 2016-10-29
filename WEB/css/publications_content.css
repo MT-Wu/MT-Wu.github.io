@@ -35,11 +35,11 @@
 
 	/*第二選單列的動畫class*/
 	.secondbanner2 ul{
-		left: 265px;
+		/*left: 265px;*/
 		transition: 2s;
 	}
 
-		.secondbanner2 ul.h2_topic2{
+/*		.secondbanner2 ul.h2_topic2{
 			left: 100px;
 		}
 
@@ -49,7 +49,7 @@
 
 		.secondbanner2 ul.h2_topic4{
 			left: -248px;
-		}
+		}*/
 
 
 .secondbanner ul li{
@@ -85,9 +85,10 @@
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 66px;
-	color:rgba(85,135,162,1);
+	color: #888;
+	/*rgba(85,135,162,1);*/
 
-	font-family: 'IM Fell English SC', serif;
+	font-family: 'IM Fell English SC', 微軟正黑體;
 	letter-spacing: 2px;
 }
 

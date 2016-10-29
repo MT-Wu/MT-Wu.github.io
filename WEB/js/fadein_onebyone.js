@@ -1,7 +1,7 @@
 // team分頁圖片進場動畫
 
 // 抓出要做動畫的元件DOM
-var $animation_elements = $('.oneperson');
+var $animation_elements = $('.onesection');
 // 抓出 window DOM
 var $window = $(window);
 
