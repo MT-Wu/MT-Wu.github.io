@@ -170,7 +170,7 @@ h2{ position: relative;
 h2:before, h2:after{
 	content: '';
 	position: absolute;
-	height: 1px;
+	height: 2px;
 	width: 200px;
 	background-color: #777;
 
@@ -178,13 +178,13 @@ h2:before, h2:after{
 }
 
 h2:before{
-	left: -220px;
-	border-radius: 0 100% 100% 0;
+	left: -250px;
+	border-radius: 100%;
 }
 
 h2:after{
-	right: -220px;
-	border-radius: 100% 0 0 100%;
+	right: -250px;
+	border-radius: 100%;
 }
 
 
@@ -221,6 +221,17 @@ h2:after{
 		top: 0px;
 		transition: 2s;
 	}
+
+/*.onesection:before{
+	content: '';
+	border: 1px solid #ccc;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 4;
+	top: 3px;
+	left: 3px;*/
+}
 
 .onesection2{
 	background: rgba(102,102,102,.5);

@@ -34,7 +34,7 @@
 }
 
 	/*第二選單列的動畫class*/
-	.secondbanner2 ul{
+/*	.secondbanner2 ul{
 		left: 265px;
 		transition: 2s;
 	}
@@ -50,7 +50,7 @@
 		.secondbanner2 ul.h2_topic4{
 			left: -248px;
 		}
-
+*/
 
 .secondbanner ul li{
 	position: relative;
@@ -109,15 +109,16 @@ h1{
 	z-index: 5;
 }
 
-h2{ position: relative;
+h2{ position: absolute;
 	display: inline-block;
-	z-index: 1;
+	z-index: 6;
 	/*font-family: 'IM Fell English SC', serif;*/
 	font-family: 'Fredericka the Great', cursive;
-	transform:rotate(-2deg);
+	/*transform:rotate(-2deg);*/
 	transform-origin: left;
 
 	margin: 50px 0 25px;
+	left: 0;
 }
 
 h2:before, h2:after{
@@ -150,8 +151,10 @@ h2:after{
 	left: 0;
 	right: 0;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 
 	width: 90%;
+	height: 100px;
 	font-size: 0;/*去除inline的縫隙*/
 	
 
@@ -173,6 +176,22 @@ h2:after{
 		top: 0px;
 		transition: 2s;
 	}
+
+.onesection:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent #ccc #ccc transparent;
+	border-radius: 5px;
+
+	position: absolute;
+	z-index: 4;
+	bottom: -8px;
+	right:-8px;
+}
 
 .onesection2{
 	background: rgba(102,102,102,.5);

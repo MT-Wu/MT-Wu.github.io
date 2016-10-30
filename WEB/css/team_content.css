@@ -68,7 +68,7 @@
 	position: absolute;
 	height: 1px;
 	width: 30px;
-	background-color: #699;
+	background-color: #777;
 
 	top: 50%;
 	left: -16px;
@@ -85,8 +85,8 @@
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 66px;
-	color:rgba(85,135,162,1);
-	/*color: #699;*/
+	/*color:rgba(85,135,162,1);*/
+	color: #777;
 
 	font-family: 'IM Fell English SC', serif;
 	letter-spacing: 2px;
