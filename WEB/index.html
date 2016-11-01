@@ -10,7 +10,27 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
  	rel="stylesheet">
-		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+
+
+<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+<!-- fonts -->
+ 	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+ 	<!-- font-family: 'Cinzel Decorative', cursive;    TITLE-->
+
+ 	<link href="https://fonts.googleapis.com/css?family=Amita" rel="stylesheet">
+ 	<!-- font-family: 'Amita', cursive; -->
+
+ 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+ 	<!-- font-family: 'IM Fell English SC', serif; -->
+
+ 	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+ 	<!-- font-family: 'Fredericka the Great', cursive; -->
+
 
 </head>
 
@@ -199,11 +219,101 @@
 	</header>
 
 
-
-	<content></content>
-
+<!-- ====================================================================================== -->
 
 
+	<content>
+
+	<!-- slider -->
+
+			<div class="slider-item">
+				<div class="slick-slide"><img src="images/school/small/IMG_0640.JPG" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_1961.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/slider/1401167_675017915842058_1648232256_o.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/slider/P1160759.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/slider/P1100205.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/slider/P1180092.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_1991.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_6365.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/slider/IMG_4101.JPG" alt=""></div>
+			</div>
+
+
+	<!-- 內容區塊 -->
+		<div class="homeframe">
+			<h1><!-- Welcome to STEMLab --></h1>
+
+		
+			<h2>Research</h2>
+
+			<div class="researchframe">
+			
+			<!--  -->
+				<div class="onesection">
+
+					<p class="name">環境時空推估<br /><span>Environmental spatio-temporal estimation</span></p>
+					
+					<img src="images/research/快.gif" alt="">
+					
+					<div class="vita">
+							<div class="vitacontent">
+			
+							</div>
+
+							<div class="vitamore">
+								
+							</div>
+					</div>
+
+				</div>
+
+			<!--  -->
+				<div class="onesection">
+					
+					<p class="name">環境資料分析<br /><span>Environmental data analysis</span></p>	
+
+					<img src="images/research/岩性呈現.gif" alt=""  class="gif">
+					
+					<div class="vita">
+							<div class="vitacontent">
+			
+							</div>
+							<div class="vitamore">
+								
+							</div>
+					</div>
+
+				</div>
+
+			<!--  -->
+				<div class="onesection">
+					
+					<p class="name">環境風險評估<br /><span>Environmental risk assessment</span></p>
+
+					<img src="images/research/濁水溪_小波結合EOF.png" alt="">
+					
+					<div class="vita">
+							<div class="vitacontent">
+			
+							</div>
+							<div class="vitamore">
+								
+							</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+
+	</content>
+
+
+<!-- ====================================================================================== -->
 
 
 	<footer>
@@ -223,6 +333,29 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/scrolltransition.js"></script>
+<script src="js/fadein_onebyone.js"></script>
+
+
+<!-- slick -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$('.slider-item').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			dots: true
+		});
+
+    });
+
+</script>
+
+
 
 </body>
 </html>
