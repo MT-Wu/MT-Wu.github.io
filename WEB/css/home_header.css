@@ -125,7 +125,8 @@ label.indexa {
 	width: 80%;
 	max-width: 1280px;
 	height: 100px;  
-	background-color: rgba(245,245,245,.9);
+	background-color: rgba(255,255,255,.9);
+
 }
 
 .logo_top img{
@@ -144,9 +145,17 @@ label.indexa {
 		.logo_top img{
 			opacity: 0;
 		}
+
+		.logo2 ~ .logo_top{
+			background-color: rgba(245,245,245,.9);
+			transition: 2s;
+		}
+
 		.logo2 ~ .logo_top img{
 			opacity: 1;
 		}
+
+
 
 
 /*---置頂左右的banner，先對位置---*/
