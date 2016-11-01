@@ -12,6 +12,14 @@
 	top: -75px;  /*看slider要多高*/
 }
 
+
+.slick-slide img
+{
+    display: block;
+    width: 100%;
+}
+
+
 /*---標題---*/
 
 h1, h2{ 

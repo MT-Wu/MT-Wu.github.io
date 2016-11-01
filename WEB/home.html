@@ -230,9 +230,12 @@
 		<!-- slider -->
 
 			<div class="slider-item">
-				<div class="slick-slide"><img src="images/school/IMG_0660.JPG" alt=""></div>
-				<div class="slick-slide"><img src="images/school/IMG_0640.JPG" alt=""></div>
-				<div class="slick-slide"><img src="images/school/IMG_1992.JPG" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_0640.JPG" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_0660.JPG" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_1961.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_1991.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_1970.jpg" alt=""></div>
+				<div class="slick-slide"><img src="images/school/small/IMG_6365.jpg" alt=""></div>
 			</div>
 
 
@@ -331,11 +334,20 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
-		$('.slider-item').slick({
-			dots: true,
-  			infinite: true,
-		});
-		
+		// $('.slider-item').slick({
+		// 	dots: true,
+  // 			infinite: true,
+		// });
+
+$('.slider-item').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000
+});
+
+
+
     });
 
 </script>
