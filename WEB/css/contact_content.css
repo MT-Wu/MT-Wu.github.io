@@ -18,7 +18,7 @@ h1{
 }
 
 p.address{
-	font-family: sans-serif;
+	font-family: sans-serif, 黑體, 微軟正黑體;
 	color: #777;
 	line-height: 32px;
 	font-size: 14px;
@@ -54,7 +54,7 @@ form{
 	position: relative;
 	z-index: 3;
 
-	font-family: sans-serif;
+	font-family: sans-serif, 黑體, 微軟正黑體;
 	color: #888;
 	line-height: 32px;
 

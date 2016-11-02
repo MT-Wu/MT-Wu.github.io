@@ -152,7 +152,7 @@ h1, h2{
 	font-weight: bold;
 	color: #555;
 
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Cinzel Decorative', cursive, 黑體, 微軟正黑體;
 	line-height: 24px;	
 }
 
@@ -165,7 +165,7 @@ h2{ position: relative;
 	display: inline-block;
 	z-index: 1;
 	/*font-family: 'IM Fell English SC', serif;*/
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Fredericka the Great', cursive, 黑體, 微軟正黑體;
 	/*transform:rotate(-2deg);*/
 	transform-origin: left;
 
