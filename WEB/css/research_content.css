@@ -190,6 +190,13 @@ h2:after{
 
 
 
+/*給首頁連結的h2錨點*/
+#research01, #research02, #research03{
+	position: absolute;
+	top: -192px;
+}
+
+
 
 /*---個人區塊---*/
 .onesection{
